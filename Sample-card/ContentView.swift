@@ -28,27 +28,33 @@ struct ContentView: View {
    
             BackCardView()
                 //.background(show ? Color ("card3") : Color("card4"))
+                .frame(width: showCard ? 300 : 340.0, height: 220.0)
                 .background(Color ("card4"))
                 .cornerRadius(20)
                 .shadow(radius: 20)
+                .offset(x: 0, y: showCard ? -50 : 0)
                 .offset(x: 0, y: show ? -320: -40.0)
                 .offset(x: viewState.width, y: viewState.height)
-                .scaleEffect(0.9)
+                .scaleEffect(showCard ? 1 : 0.95)
                 .rotationEffect(.degrees(show ? 0 : 10))
-                .rotation3DEffect(Angle(degrees: 10.0), axis: (x: 10.0, y: 0.0, z: 0.0))
+                .rotationEffect(.degrees(showCard ? -10 : 0))
+                .rotation3DEffect(Angle(degrees: showCard ? 0 : 10.0), axis: (x:showCard ? 0 : 10, y: 0.0, z: 0.0))
                 .blendMode(.hardLight)
                 .animation(.easeInOut(duration: 0.5))
             
             BackCardView()
                 //.background(show ? Color .pink : Color("card3"))
+                .frame(width: 340.0, height: 220.0)
                 .background(Color ("card3"))
                 .cornerRadius(20)
                 .shadow(radius: 20)
+                .offset(x: 0, y: showCard ? -25 : 0)
                 .offset(x: 0, y: show ? -98: -20.0)
                 .offset(x: viewState.width, y: viewState.height)
-                .scaleEffect(0.95)
+                .scaleEffect(showCard ? 1 : 0.95)
                 .rotationEffect(.degrees(show ? 0: 5))
-                .rotation3DEffect(Angle(degrees: 5), axis: (x: 10.0, y: 0.0, z: 0.0))
+                .rotationEffect(.degrees(showCard ? -5 : 0))
+                .rotation3DEffect(Angle(degrees: showCard ? 0 : 5.0), axis: (x:showCard ? 0 : 10, y: 0.0, z: 0.0))
                 .blendMode(.hardLight)
                 .animation(.easeInOut(duration: 0.3))
   
@@ -121,8 +127,6 @@ struct BackCardView: View {
         VStack {
             Spacer()
         }
-        .frame(width: 340.0, height: 220.0)
-        
     }
 }
 
@@ -165,7 +169,7 @@ struct BottomCardView: View {
                 .fontWeight(.medium)
                 .multilineTextAlignment(.leading)
                 .font(.custom("arial", size: 18))
-                .frame(width: 355)
+                .frame(width: 345)
                 .padding(.top, 10.0)
                 .lineSpacing(5)
 //                .cornerRadius(30)
