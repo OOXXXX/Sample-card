@@ -10,19 +10,25 @@ import SwiftUI
 
 struct ContentView: View {
     @State var show = false
+    @State var viewState = CGSize.zero
+    @State var showCard = false
     
     
     var body: some View {
         ZStack {
             AboutTitleView()
                 .blur(radius: show ? 20 : 0)
+                .opacity(showCard ? 0.4 : 1)
+                .offset(x: 0, y: showCard ? -100 : 0)
                 .animation(.default)
-                        
+   
             BackCardView()
-                .background(show ? Color ("card3") : Color("card4"))
+                //.background(show ? Color ("card3") : Color("card4"))
+                .background(Color ("card4"))
                 .cornerRadius(20)
                 .shadow(radius: 20)
                 .offset(x: 0, y: show ? -320: -40.0)
+                .offset(x: viewState.width, y: viewState.height)
                 .scaleEffect(0.9)
                 .rotationEffect(.degrees(show ? 0 : 10))
                 .rotation3DEffect(Angle(degrees: 10.0), axis: (x: 10.0, y: 0.0, z: 0.0))
@@ -30,31 +36,48 @@ struct ContentView: View {
                 .animation(.easeInOut(duration: 0.5))
             
             BackCardView()
-                .background(show ? Color ("card4") : Color("card3"))
+                //.background(show ? Color .pink : Color("card3"))
+                .background(Color ("card3"))
                 .cornerRadius(20)
                 .shadow(radius: 20)
                 .offset(x: 0, y: show ? -98: -20.0)
+                .offset(x: viewState.width, y: viewState.height)
                 .scaleEffect(0.95)
                 .rotationEffect(.degrees(show ? 0: 5))
                 .rotation3DEffect(Angle(degrees: 5), axis: (x: 10.0, y: 0.0, z: 0.0))
                 .blendMode(.hardLight)
                 .animation(.easeInOut(duration: 0.3))
             
+            
+            
+            
             ForeCard()
+                .offset(x: viewState.width, y: viewState.height)
+                .animation(.spring(response: 0.3, dampingFraction: 0.5, blendDuration: 0))
                 .blendMode(.hardLight)
                 .offset(x: 0, y: show ? 80: 0)
                 .animation(.easeInOut)
                 .onTapGesture {
-                    self.show.toggle()
-                
+                    self.showCard.toggle()
             }
-                
+                .gesture(
+                    DragGesture().onChanged { value in
+                        self.viewState = value.translation
+                        self.show = true
+                    }
+                    .onEnded { value in
+                        self.viewState = .zero
+                        self.show = false
+                    }
+                )
             BottomCardView()
-                .offset(x: 0, y: show ? 565 : 500)
-                .animation(.easeInOut)
-                .blur(radius: show ? 20 : 0)
-                .animation(.default)
-                    
+            .offset(x: 0, y: showCard ? 360 : 1000)
+            //.offset(x: 0, y: show ? 565 : 500)
+            .animation(.easeInOut)
+            .blur(radius: show ? 20 : 0)
+            //.animation(.timingCurve(0.2, 0.8, 0.2, 1, duration: 0.8))
+            .animation(.default)
+    
         }
     }
 }
