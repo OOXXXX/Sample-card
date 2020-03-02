@@ -20,7 +20,11 @@ struct ContentView: View {
                 .blur(radius: show ? 20 : 0)
                 .opacity(showCard ? 0.4 : 1)
                 .offset(x: 0, y: showCard ? -100 : 0)
-                .animation(.default)
+                .animation(
+                    Animation
+                        .default
+                        .delay(0.1)
+            )
    
             BackCardView()
                 //.background(show ? Color ("card3") : Color("card4"))
@@ -47,11 +51,15 @@ struct ContentView: View {
                 .rotation3DEffect(Angle(degrees: 5), axis: (x: 10.0, y: 0.0, z: 0.0))
                 .blendMode(.hardLight)
                 .animation(.easeInOut(duration: 0.3))
-            
-            
-            
+  
             
             ForeCard()
+                .frame(width: showCard ? 375 : 340, height: 220)
+                .background(Color.black)
+//                .animation(.spring())
+//                .cornerRadius(20)
+                .clipShape(RoundedRectangle(cornerRadius: showCard ? 30 : 20, style: .continuous))
+                .shadow(radius: 20)
                 .offset(x: viewState.width, y: viewState.height)
                 .animation(.spring(response: 0.3, dampingFraction: 0.5, blendDuration: 0))
                 .blendMode(.hardLight)
@@ -75,8 +83,8 @@ struct ContentView: View {
             //.offset(x: 0, y: show ? 565 : 500)
             .animation(.easeInOut)
             .blur(radius: show ? 20 : 0)
-            //.animation(.timingCurve(0.2, 0.8, 0.2, 1, duration: 0.8))
-            .animation(.default)
+            .animation(.timingCurve(0.2, 0.8, 0.2, 1, duration: 1))
+            //.animation(.easeInOut(duration: 0.8))
     
         }
     }
@@ -105,10 +113,6 @@ struct ForeCard: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 300, height: 110, alignment: .top)
         }
-        .frame(width: 340.0, height: 220.0)
-        .background(Color.black)
-        .cornerRadius(20)
-        .shadow(radius: 20)
     }
 }
 
@@ -161,14 +165,18 @@ struct BottomCardView: View {
                 .fontWeight(.medium)
                 .multilineTextAlignment(.leading)
                 .font(.custom("arial", size: 18))
+                .frame(width: 355)
                 .padding(.top, 10.0)
                 .lineSpacing(5)
+//                .cornerRadius(30)
+                
             Spacer()
         }
         .padding()
         .background(Color.white)
         .cornerRadius(30)
         .shadow(radius: 20)
+         
         
     }
 }
