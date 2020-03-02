@@ -94,7 +94,7 @@ struct AboutTitleView: View {
             .padding(.horizontal)
             .padding(5)
             Image("Background1")
-                .padding(.top, -18.0)
+                .padding(.top, -40.0)
             Spacer()
             
         }
