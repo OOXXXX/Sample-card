@@ -154,7 +154,7 @@ struct AboutTitleView: View {
         VStack {
             HStack {
                 Text("About")
-                    .modifier(FontCoustom())
+                    .modifier(FontCoustom(size: 35))
                    // .font(.largeTitle)
                     //.fontWeight(.bold)
                 Spacer()

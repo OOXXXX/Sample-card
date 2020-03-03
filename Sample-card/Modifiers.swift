@@ -17,7 +17,9 @@ struct DoubleRadiusShadow: ViewModifier {
 }
 
 struct FontCoustom: ViewModifier {
+    var size: CGFloat
+    
     func body(content: Content) -> some View {
-        content.font(.custom("Oxygen-Bold", size: 32))
+        content.font(.custom("Oxygen-Bold", size: size))
     }
 }

@@ -16,7 +16,7 @@ struct HomeView: View {
         VStack {
             HStack {
                 Text("Home")
-                   .modifier(FontCoustom())
+                   .modifier(FontCoustom(size: 33))
                   //  .font(.largeTitle)
                   //  .fontWeight(.bold)
                     
