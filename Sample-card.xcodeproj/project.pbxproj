@@ -17,6 +17,17 @@
 		1871CE73240E7F210089D1FE /* UpDateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CE72240E7F210089D1FE /* UpDateDetail.swift */; };
 		1871CE75240E7FAE0089D1FE /* UpDateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CE74240E7FAE0089D1FE /* UpDateStore.swift */; };
 		1871CE77240E84C20089D1FE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CE76240E84C20089D1FE /* TabBarView.swift */; };
+		1871CE79240EA2680089D1FE /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CE78240EA2680089D1FE /* Modifiers.swift */; };
+		1871CE8A240EA6570089D1FE /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE7C240EA6570089D1FE /* Oswald-Bold.ttf */; };
+		1871CE8B240EA6570089D1FE /* Oswald-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE7D240EA6570089D1FE /* Oswald-SemiBold.ttf */; };
+		1871CE8C240EA6570089D1FE /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE7E240EA6570089D1FE /* Oswald-Medium.ttf */; };
+		1871CE8D240EA6570089D1FE /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE7F240EA6570089D1FE /* Oswald-Regular.ttf */; };
+		1871CE8E240EA6570089D1FE /* Oswald-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE80240EA6570089D1FE /* Oswald-ExtraLight.ttf */; };
+		1871CE8F240EA6570089D1FE /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE81240EA6570089D1FE /* Oswald-Light.ttf */; };
+		1871CE91240EA6570089D1FE /* Oswald-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE83240EA6570089D1FE /* Oswald-VariableFont_wght.ttf */; };
+		1871CE93240EA6570089D1FE /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE86240EA6570089D1FE /* Oxygen-Regular.ttf */; };
+		1871CE94240EA6570089D1FE /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE87240EA6570089D1FE /* Oxygen-Light.ttf */; };
+		1871CE96240EA6580089D1FE /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE89240EA6570089D1FE /* Oxygen-Bold.ttf */; };
 		18A07049240E3197002EF179 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A07048240E3197002EF179 /* MenuView.swift */; };
 		18A0704B240E38C1002EF179 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0704A240E38C1002EF179 /* Home.swift */; };
 		18A0704D240E4032002EF179 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0704C240E4032002EF179 /* HomeView.swift */; };
@@ -35,6 +46,17 @@
 		1871CE72240E7F210089D1FE /* UpDateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDateDetail.swift; sourceTree = "<group>"; };
 		1871CE74240E7FAE0089D1FE /* UpDateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDateStore.swift; sourceTree = "<group>"; };
 		1871CE76240E84C20089D1FE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		1871CE78240EA2680089D1FE /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		1871CE7C240EA6570089D1FE /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Bold.ttf"; sourceTree = "<group>"; };
+		1871CE7D240EA6570089D1FE /* Oswald-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-SemiBold.ttf"; sourceTree = "<group>"; };
+		1871CE7E240EA6570089D1FE /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
+		1871CE7F240EA6570089D1FE /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
+		1871CE80240EA6570089D1FE /* Oswald-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1871CE81240EA6570089D1FE /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
+		1871CE83240EA6570089D1FE /* Oswald-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		1871CE86240EA6570089D1FE /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
+		1871CE87240EA6570089D1FE /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
+		1871CE89240EA6570089D1FE /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
 		18A07048240E3197002EF179 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = ../MenuView.swift; sourceTree = "<group>"; };
 		18A0704A240E38C1002EF179 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		18A0704C240E4032002EF179 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -80,7 +102,10 @@
 				1871CE74240E7FAE0089D1FE /* UpDateStore.swift */,
 				18A0704A240E38C1002EF179 /* Home.swift */,
 				18A07048240E3197002EF179 /* MenuView.swift */,
+				1871CE78240EA2680089D1FE /* Modifiers.swift */,
 				1847331D240CACA5007B2E5F /* Assets.xcassets */,
+				1871CE7A240EA6570089D1FE /* Oswald */,
+				1871CE85240EA6570089D1FE /* Oxygen */,
 				18473322240CACA5007B2E5F /* LaunchScreen.storyboard */,
 				18473325240CACA5007B2E5F /* Info.plist */,
 				1847331F240CACA5007B2E5F /* Preview Content */,
@@ -94,6 +119,38 @@
 				18473320240CACA5007B2E5F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1871CE7A240EA6570089D1FE /* Oswald */ = {
+			isa = PBXGroup;
+			children = (
+				1871CE7B240EA6570089D1FE /* static */,
+				1871CE83240EA6570089D1FE /* Oswald-VariableFont_wght.ttf */,
+			);
+			path = Oswald;
+			sourceTree = "<group>";
+		};
+		1871CE7B240EA6570089D1FE /* static */ = {
+			isa = PBXGroup;
+			children = (
+				1871CE7C240EA6570089D1FE /* Oswald-Bold.ttf */,
+				1871CE7D240EA6570089D1FE /* Oswald-SemiBold.ttf */,
+				1871CE7E240EA6570089D1FE /* Oswald-Medium.ttf */,
+				1871CE7F240EA6570089D1FE /* Oswald-Regular.ttf */,
+				1871CE80240EA6570089D1FE /* Oswald-ExtraLight.ttf */,
+				1871CE81240EA6570089D1FE /* Oswald-Light.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		1871CE85240EA6570089D1FE /* Oxygen */ = {
+			isa = PBXGroup;
+			children = (
+				1871CE86240EA6570089D1FE /* Oxygen-Regular.ttf */,
+				1871CE87240EA6570089D1FE /* Oxygen-Light.ttf */,
+				1871CE89240EA6570089D1FE /* Oxygen-Bold.ttf */,
+			);
+			path = Oxygen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +212,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				18473324240CACA5007B2E5F /* LaunchScreen.storyboard in Resources */,
+				1871CE96240EA6580089D1FE /* Oxygen-Bold.ttf in Resources */,
+				1871CE8B240EA6570089D1FE /* Oswald-SemiBold.ttf in Resources */,
 				18473321240CACA5007B2E5F /* Preview Assets.xcassets in Resources */,
+				1871CE8F240EA6570089D1FE /* Oswald-Light.ttf in Resources */,
+				1871CE93240EA6570089D1FE /* Oxygen-Regular.ttf in Resources */,
+				1871CE8D240EA6570089D1FE /* Oswald-Regular.ttf in Resources */,
+				1871CE94240EA6570089D1FE /* Oxygen-Light.ttf in Resources */,
+				1871CE8E240EA6570089D1FE /* Oswald-ExtraLight.ttf in Resources */,
+				1871CE8C240EA6570089D1FE /* Oswald-Medium.ttf in Resources */,
+				1871CE91240EA6570089D1FE /* Oswald-VariableFont_wght.ttf in Resources */,
 				1847331E240CACA5007B2E5F /* Assets.xcassets in Resources */,
+				1871CE8A240EA6570089D1FE /* Oswald-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1871CE71240E7F020089D1FE /* UpDatelist.swift in Sources */,
+				1871CE79240EA2680089D1FE /* Modifiers.swift in Sources */,
 				1871CE75240E7FAE0089D1FE /* UpDateStore.swift in Sources */,
 				18473318240CACA3007B2E5F /* AppDelegate.swift in Sources */,
 				18A07049240E3197002EF179 /* MenuView.swift in Sources */,

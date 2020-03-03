@@ -17,10 +17,10 @@ struct Home: View {
             Color("background1")
             .edgesIgnoringSafeArea(.all)
             
-             HomeView(showProfile: $showProfile)
+            HomeView(showProfile: $showProfile)
             .padding(.top, 40)
             .background(Color("background3"))
-                .clipShape(RoundedRectangle(cornerRadius: showProfile ? 30 : 0, style: .continuous))
+            .clipShape(RoundedRectangle(cornerRadius: showProfile ? 30 : 0, style: .continuous))
             .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
             .offset(y: showProfile ? -450 : 0)
             .rotation3DEffect(Angle(degrees: showProfile ? Double(viewState.height / 10) - 10 : 0), axis: (x: 10.0, y: 0, z: 0))

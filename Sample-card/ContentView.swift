@@ -154,8 +154,9 @@ struct AboutTitleView: View {
         VStack {
             HStack {
                 Text("About")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
+                    .modifier(FontCoustom())
+                   // .font(.largeTitle)
+                    //.fontWeight(.bold)
                 Spacer()
             }
             .padding(.horizontal)
