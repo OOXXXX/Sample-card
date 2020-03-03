@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var show = false
     @State var viewState = CGSize.zero
     @State var showCard = false
+    @State var bottomState = CGSize.zero
     
     
     var body: some View {
@@ -33,7 +34,7 @@ struct ContentView: View {
                 .cornerRadius(20)
                 .shadow(radius: 20)
                 .offset(x: 0, y: showCard ? -50 : 0)
-                .offset(x: 0, y: show ? -320: -40.0)
+                .offset(x: 0, y: show ? -300: -40.0)
                 .offset(x: viewState.width, y: viewState.height)
                 .scaleEffect(showCard ? 1 : 0.95)
                 .rotationEffect(.degrees(show ? 0 : 10))
@@ -61,7 +62,7 @@ struct ContentView: View {
             
             ForeCard()
                 .frame(width: showCard ? 375 : 340, height: 220)
-                .background(Color.black)
+                .background(Color("card5"))
 //                .animation(.spring())
 //                .cornerRadius(20)
                 .clipShape(RoundedRectangle(cornerRadius: showCard ? 30 : 20, style: .continuous))
@@ -86,12 +87,27 @@ struct ContentView: View {
                 )
             BottomCardView()
             .offset(x: 0, y: showCard ? 360 : 1000)
+            .offset(y: bottomState.height)
             //.offset(x: 0, y: show ? 565 : 500)
             .animation(.easeInOut)
             .blur(radius: show ? 20 : 0)
-            .animation(.timingCurve(0.2, 0.8, 0.2, 1, duration: 1))
+                .animation( showCard ? (.timingCurve(0.2, 0.8, 0.2, 1, duration: 0.8)) : .linear(duration: 1))
             //.animation(.easeInOut(duration: 0.8))
-    
+            .gesture(
+                DragGesture().onChanged { value in
+                    self.bottomState = value.translation
+                    if self.bottomState.height < -300 {
+                        self.bottomState.height = -300
+                    }
+                    
+                }
+                .onEnded { value in
+                    if self.bottomState.height > 50 {
+                        self.showCard = false
+                    }
+                    self.bottomState = .zero
+                }
+            )
         }
     }
 }
@@ -172,15 +188,13 @@ struct BottomCardView: View {
                 .frame(width: 345)
                 .padding(.top, 10.0)
                 .lineSpacing(5)
-//                .cornerRadius(30)
+//              .cornerRadius(30)
                 
             Spacer()
         }
         .padding()
-        .background(Color.white)
+        .background(Color("background3"))
         .cornerRadius(30)
         .shadow(radius: 20)
-         
-        
     }
 }
