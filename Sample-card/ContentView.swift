@@ -85,6 +85,9 @@ struct ContentView: View {
                         self.show = false
                     }
                 )
+            
+//            Text("\(bottomState.height)").offset(y: -300)
+            
             BottomCardView()
             .offset(x: 0, y: showCard ? 360 : 1000)
             .offset(y: bottomState.height)
@@ -96,8 +99,8 @@ struct ContentView: View {
             .gesture(
                 DragGesture().onChanged { value in
                     self.bottomState = value.translation
-                    if self.bottomState.height < -300 {
-                        self.bottomState.height = -300
+                    if self.bottomState.height < -200 {
+                       self.bottomState.height = -200
                     }
                     
                 }

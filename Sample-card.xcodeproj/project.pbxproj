@@ -15,6 +15,7 @@
 		18473324240CACA5007B2E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18473322240CACA5007B2E5F /* LaunchScreen.storyboard */; };
 		18A07049240E3197002EF179 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A07048240E3197002EF179 /* MenuView.swift */; };
 		18A0704B240E38C1002EF179 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0704A240E38C1002EF179 /* Home.swift */; };
+		18A0704D240E4032002EF179 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0704C240E4032002EF179 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		18473325240CACA5007B2E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A07048240E3197002EF179 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = ../MenuView.swift; sourceTree = "<group>"; };
 		18A0704A240E38C1002EF179 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		18A0704C240E4032002EF179 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				18473317240CACA3007B2E5F /* AppDelegate.swift */,
 				18473319240CACA3007B2E5F /* SceneDelegate.swift */,
 				18A0704A240E38C1002EF179 /* Home.swift */,
+				18A0704C240E4032002EF179 /* HomeView.swift */,
 				18A07048240E3197002EF179 /* MenuView.swift */,
 				1847331B240CACA3007B2E5F /* ContentView.swift */,
 				1847331D240CACA5007B2E5F /* Assets.xcassets */,
@@ -155,6 +158,7 @@
 				18473318240CACA3007B2E5F /* AppDelegate.swift in Sources */,
 				18A07049240E3197002EF179 /* MenuView.swift in Sources */,
 				18A0704B240E38C1002EF179 /* Home.swift in Sources */,
+				18A0704D240E4032002EF179 /* HomeView.swift in Sources */,
 				1847331A240CACA3007B2E5F /* SceneDelegate.swift in Sources */,
 				1847331C240CACA3007B2E5F /* ContentView.swift in Sources */,
 			);
