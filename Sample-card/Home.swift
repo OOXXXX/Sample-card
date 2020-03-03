@@ -30,7 +30,7 @@ struct Home: View {
             
             MenuView()
                 .background(Color.black.opacity(0.001))
-                .offset(y: showProfile ? 0 : 1000)
+                .offset(y: showProfile ? 0 : screen.height)
                 .offset(y: viewState.height)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
                 .onTapGesture {
@@ -74,3 +74,6 @@ struct AvatarView: View {
         }
     }
 }
+
+
+let screen = UIScreen.main.bounds
