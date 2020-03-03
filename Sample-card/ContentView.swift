@@ -89,7 +89,7 @@ struct ContentView: View {
 //            Text("\(bottomState.height)").offset(y: -300)
             
             BottomCardView()
-            .offset(x: 0, y: showCard ? 360 : 1000)
+            .offset(x: 0, y: showCard ? 320 : 1000)
             .offset(y: bottomState.height)
             //.offset(x: 0, y: show ? 565 : 500)
             .animation(.easeInOut)
@@ -99,8 +99,8 @@ struct ContentView: View {
             .gesture(
                 DragGesture().onChanged { value in
                     self.bottomState = value.translation
-                    if self.bottomState.height < -200 {
-                       self.bottomState.height = -200
+                    if self.bottomState.height < -230 {
+                       self.bottomState.height = -230
                     }
                     
                 }
@@ -168,11 +168,7 @@ struct AboutTitleView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+
 
 struct BottomCardView: View {
     var body: some View {
@@ -199,5 +195,11 @@ struct BottomCardView: View {
         .background(Color("background3"))
         .cornerRadius(30)
         .shadow(radius: 20)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }

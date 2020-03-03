@@ -39,12 +39,12 @@ struct Home: View {
             .gesture(
                 DragGesture().onChanged { value in
                     self.viewState = value.translation
-                    if self.viewState.height < -65 {
-                    self.viewState.height = -65
+                    if self.viewState.height < -15 {
+                    self.viewState.height = -15
                     }
                 }
                 .onEnded { value in
-                    if self.viewState.height > -60 {
+                    if self.viewState.height > -5 {
                        self.showProfile = false
                     }
                     
