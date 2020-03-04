@@ -23,3 +23,11 @@ struct FontCoustom: ViewModifier {
         content.font(.custom("Oxygen-Bold", size: size))
     }
 }
+
+struct FontCoustom2: ViewModifier {
+    var size: CGFloat
+    
+    func body(content: Content) -> some View {
+        content.font(.custom("UbuntuCondensed-Regular", size: size))
+    }
+}

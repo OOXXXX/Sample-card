@@ -28,6 +28,7 @@
 		1871CE93240EA6570089D1FE /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE86240EA6570089D1FE /* Oxygen-Regular.ttf */; };
 		1871CE94240EA6570089D1FE /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE87240EA6570089D1FE /* Oxygen-Light.ttf */; };
 		1871CE96240EA6580089D1FE /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE89240EA6570089D1FE /* Oxygen-Bold.ttf */; };
+		18798D8A240F556A0086F758 /* UbuntuCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18798D88240F556A0086F758 /* UbuntuCondensed-Regular.ttf */; };
 		18A07049240E3197002EF179 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A07048240E3197002EF179 /* MenuView.swift */; };
 		18A0704B240E38C1002EF179 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0704A240E38C1002EF179 /* Home.swift */; };
 		18A0704D240E4032002EF179 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0704C240E4032002EF179 /* HomeView.swift */; };
@@ -57,6 +58,7 @@
 		1871CE86240EA6570089D1FE /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
 		1871CE87240EA6570089D1FE /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
 		1871CE89240EA6570089D1FE /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
+		18798D88240F556A0086F758 /* UbuntuCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		18A07048240E3197002EF179 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = ../MenuView.swift; sourceTree = "<group>"; };
 		18A0704A240E38C1002EF179 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		18A0704C240E4032002EF179 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				18A07048240E3197002EF179 /* MenuView.swift */,
 				1871CE78240EA2680089D1FE /* Modifiers.swift */,
 				1847331D240CACA5007B2E5F /* Assets.xcassets */,
+				18798D87240F556A0086F758 /* Ubuntu_Condensed */,
 				1871CE7A240EA6570089D1FE /* Oswald */,
 				1871CE85240EA6570089D1FE /* Oxygen */,
 				18473322240CACA5007B2E5F /* LaunchScreen.storyboard */,
@@ -151,6 +154,14 @@
 				1871CE89240EA6570089D1FE /* Oxygen-Bold.ttf */,
 			);
 			path = Oxygen;
+			sourceTree = "<group>";
+		};
+		18798D87240F556A0086F758 /* Ubuntu_Condensed */ = {
+			isa = PBXGroup;
+			children = (
+				18798D88240F556A0086F758 /* UbuntuCondensed-Regular.ttf */,
+			);
+			path = Ubuntu_Condensed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 				1871CE96240EA6580089D1FE /* Oxygen-Bold.ttf in Resources */,
 				1871CE8B240EA6570089D1FE /* Oswald-SemiBold.ttf in Resources */,
 				18473321240CACA5007B2E5F /* Preview Assets.xcassets in Resources */,
+				18798D8A240F556A0086F758 /* UbuntuCondensed-Regular.ttf in Resources */,
 				1871CE8F240EA6570089D1FE /* Oswald-Light.ttf in Resources */,
 				1871CE93240EA6570089D1FE /* Oxygen-Regular.ttf in Resources */,
 				1871CE8D240EA6570089D1FE /* Oswald-Regular.ttf in Resources */,

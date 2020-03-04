@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Desk.jpg",
+      "filename" : "CatUpdate.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Desk.dark.jpg",
+      "filename" : "CatDDark.jpg",
       "appearances" : [
         {
           "appearance" : "luminosity",

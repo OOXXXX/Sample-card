@@ -30,7 +30,7 @@ struct ContentView: View {
             BackCardView()
                 //.background(show ? Color ("card3") : Color("card4"))
                 .frame(width: showCard ? 300 : 340.0, height: 220.0)
-                .background(Color ("card4"))
+                .background(Color ("secondary"))
                 .cornerRadius(20)
                 .shadow(radius: 20)
                 .offset(x: 0, y: showCard ? -50 : 0)
@@ -40,13 +40,13 @@ struct ContentView: View {
                 .rotationEffect(.degrees(show ? 0 : 10))
                 .rotationEffect(.degrees(showCard ? -10 : 0))
                 .rotation3DEffect(Angle(degrees: showCard ? 0 : 10.0), axis: (x:showCard ? 0 : 10, y: 0.0, z: 0.0))
-                .blendMode(.hardLight)
+ //               .blendMode(.colorDodge)
                 .animation(.easeInOut(duration: 0.5))
             
             BackCardView()
                 //.background(show ? Color .pink : Color("card3"))
                 .frame(width: 340.0, height: 220.0)
-                .background(Color ("card3"))
+                .background(Color ("secondary"))
                 .cornerRadius(20)
                 .shadow(radius: 20)
                 .offset(x: 0, y: showCard ? -25 : 0)
@@ -62,14 +62,12 @@ struct ContentView: View {
             
             ForeCard()
                 .frame(width: showCard ? 375 : 340, height: 220)
-                .background(Color("card5"))
-//                .animation(.spring())
-//                .cornerRadius(20)
+                .background(Image("Desktop").resizable())
                 .clipShape(RoundedRectangle(cornerRadius: showCard ? 30 : 20, style: .continuous))
                 .shadow(radius: 20)
                 .offset(x: viewState.width, y: viewState.height)
                 .animation(.spring(response: 0.3, dampingFraction: 0.5, blendDuration: 0))
-                .blendMode(.hardLight)
+                //.blendMode(.color)
                 .offset(x: 0, y: show ? 80: 0)
                 .animation(.easeInOut)
                 .onTapGesture {
@@ -89,7 +87,7 @@ struct ContentView: View {
 //            Text("\(bottomState.height)").offset(y: -300)
             
             BottomCardView()
-            .offset(x: 0, y: showCard ? 320 : 1000)
+            .offset(x: 0, y: showCard ? 310 : 1000)
             .offset(y: bottomState.height)
             //.offset(x: 0, y: show ? 565 : 500)
             .animation(.easeInOut)
@@ -99,8 +97,8 @@ struct ContentView: View {
             .gesture(
                 DragGesture().onChanged { value in
                     self.bottomState = value.translation
-                    if self.bottomState.height < -230 {
-                       self.bottomState.height = -230
+                    if self.bottomState.height < -210 {
+                       self.bottomState.height = -210
                     }
                     
                 }
@@ -125,18 +123,22 @@ struct ForeCard: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                     Text("Swift / Python / CSS")
-                        .foregroundColor(Color("accent"))
+                    .modifier(FontCoustom(size: 16))
+                    .foregroundColor(Color("Color"))
                 }
                 
                 Spacer()
-                Image("Logo1")
+                Image("swift")
+                .resizable()
+                .frame(width: 40, height: 40)
+                .offset(x: 0, y: -3)
             }
             .padding()
             Spacer()
-            Image("Card1")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 300, height: 110, alignment: .top)
+//            Image("Desktop")
+//                .resizable()
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 300, height: 110, alignment: .top)
         }
     }
 }
@@ -154,9 +156,9 @@ struct AboutTitleView: View {
         VStack {
             HStack {
                 Text("About")
-                    .modifier(FontCoustom(size: 35))
-                   // .font(.largeTitle)
-                    //.fontWeight(.bold)
+//                    .modifier(FontCoustom(size: 35))
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                 Spacer()
             }
             .padding(.horizontal)
@@ -189,9 +191,22 @@ struct BottomCardView: View {
                 .padding(.top, 10.0)
                 .lineSpacing(5)
 //              .cornerRadius(30)
-                
+                        
             Spacer()
+           
+            
+            
+            Image("Image")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .offset(x: 0, y: -70)
+            Text("2020 Patrick Zhu™️")
+                 .modifier(FontCoustom2(size: 18))
+            //.frame(width: 20, height: 20, alignment: .center)
+            .offset(x: 0, y: -120)
+
         }
+            
         .padding()
         .background(Color("background3"))
         .cornerRadius(30)
