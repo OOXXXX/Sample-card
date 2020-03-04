@@ -61,6 +61,8 @@ struct Home: View {
                 }
             )
         }
+        .statusBar(hidden: showProfile ? true : false)
+        .animation(.easeIn)
     }
 }
 

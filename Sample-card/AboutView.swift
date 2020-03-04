@@ -110,6 +110,9 @@ struct ContentView: View {
                 }
             )
         }
+        
+        .statusBar(hidden: showCard ? true : false)
+        .animation(.easeIn)
     }
 }
 
