@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182D8AE8240FC4E80050CB62 /* ContextDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D8AE7240FC4E80050CB62 /* ContextDetail.swift */; };
 		18473318240CACA3007B2E5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18473317240CACA3007B2E5F /* AppDelegate.swift */; };
 		1847331A240CACA3007B2E5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18473319240CACA3007B2E5F /* SceneDelegate.swift */; };
 		1847331C240CACA3007B2E5F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847331B240CACA3007B2E5F /* AboutView.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182D8AE7240FC4E80050CB62 /* ContextDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextDetail.swift; sourceTree = "<group>"; };
 		18473314240CACA3007B2E5F /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18473317240CACA3007B2E5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18473319240CACA3007B2E5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				18A0704A240E38C1002EF179 /* Home.swift */,
 				18A0704C240E4032002EF179 /* HomeView.swift */,
 				18EC8B50240FA361004DBE05 /* ContextView.swift */,
+				182D8AE7240FC4E80050CB62 /* ContextDetail.swift */,
 				18A07048240E3197002EF179 /* MenuView.swift */,
 				1871CE76240E84C20089D1FE /* TabBarView.swift */,
 				1871CE70240E7F020089D1FE /* UpDatelist.swift */,
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18EC8B51240FA361004DBE05 /* ContextView.swift in Sources */,
+				182D8AE8240FC4E80050CB62 /* ContextDetail.swift in Sources */,
 				1871CE71240E7F020089D1FE /* UpDatelist.swift in Sources */,
 				1871CE79240EA2680089D1FE /* Modifiers.swift in Sources */,
 				1871CE75240E7FAE0089D1FE /* UpDateStore.swift in Sources */,
