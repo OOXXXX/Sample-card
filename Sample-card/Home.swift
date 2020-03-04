@@ -19,7 +19,15 @@ struct Home: View {
             
             HomeView(showProfile: $showProfile)
             .padding(.top, 40)
-            .background(Color("background3"))
+            
+             .background(
+                    VStack {
+                LinearGradient(gradient: Gradient(colors: [Color("background2"), Color("background4")]), startPoint: .top, endPoint: .bottom)
+                            .frame(height: 200)
+                                   Spacer()
+                        }
+            .background(Color("background4"))
+      )
             .clipShape(RoundedRectangle(cornerRadius: showProfile ? 30 : 0, style: .continuous))
             .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
             .offset(y: showProfile ? -450 : 0)
@@ -46,6 +54,7 @@ struct Home: View {
                 .onEnded { value in
                     if self.viewState.height > -5 {
                        self.showProfile = false
+                        
                     }
                     
                     self.viewState = .zero

@@ -161,10 +161,11 @@ struct AboutTitleView: View {
                     .fontWeight(.bold)
                 Spacer()
             }
-            .padding(.horizontal)
-            .padding(5)
+                .padding(.horizontal)
+                .padding(.leading, 10)
+                .padding(.top, 3)
             Image("Background1")
-                .padding(.top, -40.0)
+                .padding(.top, -20.0)
             Spacer()
             
         }
