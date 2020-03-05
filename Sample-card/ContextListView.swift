@@ -103,7 +103,7 @@ struct CourseView: View {
                             .animation(nil)
                            // .padding(.top, -20)
                         Text(course.subtitle)
-                            .foregroundColor(Color.black.opacity(0.7))
+                            .foregroundColor(Color.gray)
                             .animation(nil)
                     }
                     Spacer()
