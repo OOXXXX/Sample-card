@@ -26,9 +26,9 @@ struct HomeView: View {
                     AvatarView(showProfile: $showProfile)
                     
                     Button(action: { self.showUpdate.toggle() }) {
-                        Image(systemName: "bell")
+                        Image(systemName: "bolt.horizontal.fill")
                             .renderingMode(.original)
-                            .font(.system(size: 16, weight: .medium))
+                            .font(.system(size: 18, weight: .medium))
                             .frame(width: 36, height: 36)
                             .background(Color.white)
                             .clipShape(Circle())
