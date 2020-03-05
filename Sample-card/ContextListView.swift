@@ -55,8 +55,8 @@ struct CourseList: View {
                     }
                 }
                 .frame(width: screen.width)
-                .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
-                
+                .animation(.spring(response: 1, dampingFraction: 0.6, blendDuration: 0))
+                //.animation(.easeInOut(duration: 0.3))
             }
         }
     }
@@ -104,12 +104,15 @@ struct CourseView: View {
                            // .padding(.top, -20)
                         Text(course.subtitle)
                             .foregroundColor(Color.gray)
+                            .modifier(FontCoustom2(size: 18))
                             .animation(nil)
                     }
                     Spacer()
                     ZStack {
-                        Image(uiImage: course.logo)
-                            .opacity(show ? 0 : 1)
+                        Image("Logo2")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .opacity(show ? 0 : 1)
                         
                         VStack {
                             Image(systemName: "xmark")

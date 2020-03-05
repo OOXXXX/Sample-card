@@ -32,6 +32,8 @@
 		1871CE93240EA6570089D1FE /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE86240EA6570089D1FE /* Oxygen-Regular.ttf */; };
 		1871CE94240EA6570089D1FE /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE87240EA6570089D1FE /* Oxygen-Light.ttf */; };
 		1871CE96240EA6580089D1FE /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1871CE89240EA6570089D1FE /* Oxygen-Bold.ttf */; };
+		1871E4322411387C0059032C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E4312411387C0059032C /* WebView.swift */; };
+		1871E43424113BED0059032C /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E43324113BED0059032C /* BlogView.swift */; };
 		18798D8A240F556A0086F758 /* UbuntuCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18798D88240F556A0086F758 /* UbuntuCondensed-Regular.ttf */; };
 		18870AD82410D921009AAB50 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18870AD72410D921009AAB50 /* Utilities.swift */; };
 		18A07049240E3197002EF179 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A07048240E3197002EF179 /* MenuView.swift */; };
@@ -71,6 +73,8 @@
 		1871CE86240EA6570089D1FE /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
 		1871CE87240EA6570089D1FE /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Light.ttf"; sourceTree = "<group>"; };
 		1871CE89240EA6570089D1FE /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Bold.ttf"; sourceTree = "<group>"; };
+		1871E4312411387C0059032C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		1871E43324113BED0059032C /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
 		18798D88240F556A0086F758 /* UbuntuCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		18870AD72410D921009AAB50 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		18A07048240E3197002EF179 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = ../MenuView.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				182D8AE9240FCBD80050CB62 /* PostList.swift */,
 				182D8AEB240FCBE30050CB62 /* Data.swift */,
 				182D8AED240FCDB40050CB62 /* DataStore.swift */,
+				1871E4312411387C0059032C /* WebView.swift */,
+				1871E43324113BED0059032C /* BlogView.swift */,
 				18870AD72410D921009AAB50 /* Utilities.swift */,
 				1847331D240CACA5007B2E5F /* Assets.xcassets */,
 				18798D87240F556A0086F758 /* Ubuntu_Condensed */,
@@ -291,7 +297,9 @@
 				1865A2732410B03300DF1628 /* ContextListView.swift in Sources */,
 				1871CE73240E7F210089D1FE /* UpDateDetail.swift in Sources */,
 				18A0704B240E38C1002EF179 /* Home.swift in Sources */,
+				1871E43424113BED0059032C /* BlogView.swift in Sources */,
 				18A0704D240E4032002EF179 /* HomeView.swift in Sources */,
+				1871E4322411387C0059032C /* WebView.swift in Sources */,
 				1847331A240CACA3007B2E5F /* SceneDelegate.swift in Sources */,
 				1871CE77240E84C20089D1FE /* TabBarView.swift in Sources */,
 				1847331C240CACA3007B2E5F /* AboutView.swift in Sources */,

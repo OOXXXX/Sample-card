@@ -26,7 +26,8 @@ struct CourseDetail: View {
                                 .lineLimit(3)
                                 .foregroundColor(.gray)
                             Text(course.subtitle.uppercased())
-                                .foregroundColor(Color.white.opacity(0.7))
+                                .foregroundColor(.gray)
+                                .modifier(FontCoustom2(size: 18))
                         }
                         Spacer()
                         ZStack {
@@ -34,19 +35,22 @@ struct CourseDetail: View {
                                 Image(systemName: "xmark")
                                     .font(.system(size: 16, weight: .medium))
                                     .foregroundColor(.white)
+                                    //.background(Color("Color"))
                             }
                             .frame(width: 36, height: 36)
-                            .background(Color("Color"))
+                        //    .background(Color("Color"))
+                            .background(Color("Buttom"))
                             .clipShape(Circle())
                             .onTapGesture {
                                 self.show = false
                                 self.active = false
                                 self.activeIndex = -1
+                                
                             }
                         }
                     }
                     .opacity(appear ? 1 : 0)
-                    .animation(.linear(duration: 1))
+                    .animation(.linear(duration: 0.6))
                     .onAppear {
                         self.appear = true
                     }
@@ -65,7 +69,7 @@ struct CourseDetail: View {
                 .frame(maxWidth: 712)
                 .background(Color(course.color))
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                .shadow(color: Color(course.color).opacity(0.3), radius: 20, x: 0, y: 20)
+                .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
                 
                 VStack(alignment: .leading,spacing: 1) {
                     Text(course.context)
