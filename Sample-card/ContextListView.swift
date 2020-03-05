@@ -15,15 +15,19 @@ struct CourseList: View {
     @State var activeIndex = -1
     @State var activeView = CGSize.zero
     
+    
     var body: some View {
         ZStack {
             Color.black.opacity(Double(self.activeView.height/500))
                 .animation(.linear)
+                
+                .background(Color("background3"))
                 .edgesIgnoringSafeArea(.all)
+            
             
             ScrollView {
                 VStack(spacing: 30) {
-                    Text("Categories")
+                    Text("Posts")
                         .font(.system(.largeTitle))
                         .fontWeight(.bold)
                         .alignmentGuide(.leading, computeValue: { _ in -30})
@@ -46,12 +50,13 @@ struct CourseList: View {
                                 .scaleEffect(self.activeIndex != index && self.active ? 0.5 : 1)
                                 .offset(x: self.activeIndex != index && self.active ? screen.width : 0)
                         }
-                        .frame(height: getCardHeight())
+                        .frame(height: 260)
                         .frame(maxWidth: self.active ? 712 : getCardWidth())
                     }
                 }
                 .frame(width: screen.width)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
+                
             }
         }
     }
@@ -72,19 +77,10 @@ struct CourseView: View {
     @Binding var activeView: CGSize
     
     var body: some View {
-        ZStack(alignment: .top) {
+        ZStack() {
             VStack(alignment: .leading,spacing: 30) {
                 Text(course.context)
                 
-                Text("About this course")
-                    .font(.title)
-                    .fontWeight(.bold)
-                
-                Text("This course is unlike any other. We care about design and want to make sure that you get better at it in the process. It was written for designers and developers who are passionate about collaborating and building real apps for iOS and macOS. While it's not one codebase for all apps, you learn once and can apply the techniques and controls to all platforms with incredible quality, consistency and performance. It's beginner-friendly, but it's also packed with design tricks and efficient workflows for building great user interfaces and interactions.")
-                    .foregroundColor(Color("secondary"))
-                
-                Text("Minimal coding experience required, such as in HTML and CSS. Please note that Xcode 11 and Catalina are essential. Once you get everything installed, it'll get a lot friendlier! I added a bunch of troubleshoots at the end of this page to help you navigate the issues you might encounter.")
-                .foregroundColor(Color("secondary"))
             }
             
             .padding(30)
@@ -101,11 +97,13 @@ struct CourseView: View {
                     VStack(alignment: .leading, spacing: 8.0) {
                         Text(course.title)
                             .font(.system(size: 24, weight: .bold))
+                            .foregroundColor(Color.gray)
                             .lineLimit(3)
-                            .foregroundColor(.white)
+                            
                             .animation(nil)
+                           // .padding(.top, -20)
                         Text(course.subtitle)
-                            .foregroundColor(Color.white.opacity(0.7))
+                            .foregroundColor(Color.black.opacity(0.7))
                             .animation(nil)
                     }
                     Spacer()
@@ -123,8 +121,11 @@ struct CourseView: View {
                         .clipShape(Circle())
                         .opacity(show ? 1 : 0)
                     }
+                    
                 }
+                .padding(.top, -30)
                 Spacer()
+                
                 WebImage(url: course.image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -132,12 +133,12 @@ struct CourseView: View {
                     .frame(height: 140, alignment: .top)
             }
             .padding(show ? 30 : 20)
-            .padding(.top, show ? 30 : 0)
+            .padding(.top, show ? 30 : 40)
     //        .frame(width: show ? screen.width : screen.width - 60, height: show ? screen.height : 280)
             .frame(maxWidth: show ? .infinity : screen.width - 60, maxHeight: show ? 280 : 270)
                 .background(Color(course.color))
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                .shadow(color: Color(course.color).opacity(0.3), radius: 20, x: 0, y: 20)
+                .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 20)
 //            .gesture(
 //                show ?
 //                DragGesture().onChanged { value in
@@ -168,7 +169,7 @@ struct CourseView: View {
             
            if show {
             CourseDetail(course: course, show: $show, active: $active, activeIndex: $activeIndex)
-                .background(Color("background1"))
+                .background(Color("background3"))
                 .animation(.linear(duration: 0))
                 }
         }
@@ -203,6 +204,7 @@ struct Course: Identifiable {
     var id = UUID()
     var title: String
     var subtitle: String
+    var textColour: UIColor
     var context: String
     var image: URL
     var logo: UIImage
@@ -210,8 +212,10 @@ struct Course: Identifiable {
     var show: Bool
     
     
+    
 }
 
 var courseData = [
-    Course(title: ("Last night in 2019"), subtitle: "18 Sections", context: " ", image: URL(string: "https://dl.dropbox.com/s/pmggyp7j64nvvg8/Certificate%402x.png?dl=0")!, logo: #imageLiteral(resourceName: "Logo1"), color: #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1), show: false),
+    
+    Course(title: ("The HomeTown"), subtitle: ("Nanjing©️"), textColour: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), context: " ", image: URL(string: "https://i.loli.net/2020/03/05/7GyAwmKTfgBctYn.png")!, logo: #imageLiteral(resourceName: "Logo2"), color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), show: false),
 ]

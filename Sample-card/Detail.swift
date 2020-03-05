@@ -1,9 +1,8 @@
+//  ContextDetail.swift
+//  Sample-card
 //
-//  CourseDetail.swift
-//  DesignCode
-//
-//  Created by Meng To on 2019-12-11.
-//  Copyright © 2019 Meng To. All rights reserved.
+//  Created by Rhapsody on 2020/3/4.
+//  Copyright © 2020 Rhapsody. All rights reserved.
 //
 
 import SwiftUI
@@ -25,7 +24,7 @@ struct CourseDetail: View {
                             Text(course.title)
                                 .font(.system(size: 24, weight: .bold))
                                 .lineLimit(3)
-                                .foregroundColor(.white)
+                                .foregroundColor(.gray)
                             Text(course.subtitle.uppercased())
                                 .foregroundColor(Color.white.opacity(0.7))
                         }
@@ -37,7 +36,7 @@ struct CourseDetail: View {
                                     .foregroundColor(.white)
                             }
                             .frame(width: 36, height: 36)
-                            .background(Color.black)
+                            .background(Color("Color"))
                             .clipShape(Circle())
                             .onTapGesture {
                                 self.show = false
@@ -56,42 +55,22 @@ struct CourseDetail: View {
                     
                     WebImage(url: course.image)
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
+                        .aspectRatio(contentMode: .fit)
                         .frame(maxWidth: .infinity)
                         .frame(height: 140, alignment: .top)
                 }
                 .padding(30)
                 .padding(.top, 44)
-                .frame(height: 460)
+                .frame(height: 270)
                 .frame(maxWidth: 712)
                 .background(Color(course.color))
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
                 .shadow(color: Color(course.color).opacity(0.3), radius: 20, x: 0, y: 20)
                 
-                VStack(alignment: .leading,spacing: 30) {
+                VStack(alignment: .leading,spacing: 1) {
                     Text(course.context)
-                        .foregroundColor(Color("secondary"))
-                    
-                    Text("About this course")
-                        .font(.title)
-                        .fontWeight(.bold)
-                    
-                    Text("This course is unlike any other. We care about design and want to make sure that you get better at it in the process. It was written for designers and developers who are passionate about collaborating and building real apps for iOS and macOS. While it's not one codebase for all apps, you learn once and can apply the techniques and controls to all platforms with incredible quality, consistency and performance. It's beginner-friendly, but it's also packed with design tricks and efficient workflows for building great user interfaces and interactions.")
-                        .foregroundColor(Color("secondary"))
-                    
-                    Text("Requirements")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    
-                    Text("Minimal coding experience required, such as in HTML and CSS. Please note that Xcode 11 and Catalina are essential. Once you get everything installed, it'll get a lot friendlier! I added a bunch of troubleshoots at the end of this page to help you navigate the issues you might encounter.")
-                        .foregroundColor(Color("secondary"))
-                    
-                    Text("Animations")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    
-                    Text("SwiftUI provides a number of ways to animate your transitions. They even have their own physics-based built-in functions that allows you to use overshoot and apply bounciness to your animations.")
-                        .foregroundColor(Color("secondary"))
+                .foregroundColor(Color("secondary"))
+       
                 }
                 .padding(30)
                 .padding(.bottom, 100)

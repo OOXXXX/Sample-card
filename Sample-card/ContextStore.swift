@@ -41,6 +41,7 @@ class CourseStore: ObservableObject {
                     Course(
                         title: item.fields["title"] as! String,
                         subtitle: item.fields["subtitle"] as! String,
+                        textColour: colors[index],
                         context: item.fields["context"] as! String,
                         image: item.fields.linkedAsset(at: "image")!.url ?? URL(string: "")!,
                         logo: #imageLiteral(resourceName: "Logo2"),

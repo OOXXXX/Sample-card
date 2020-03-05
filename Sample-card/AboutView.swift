@@ -47,6 +47,7 @@ struct ContentView: View {
                 //.background(show ? Color .pink : Color("card3"))
                 .frame(width: 340.0, height: 220.0)
                 .background(Color ("secondary"))
+                
                 .cornerRadius(20)
                 .shadow(radius: 20)
                 .offset(x: 0, y: showCard ? -25 : 0)
@@ -92,7 +93,7 @@ struct ContentView: View {
             //.offset(x: 0, y: show ? 565 : 500)
             .animation(.easeInOut)
             .blur(radius: show ? 20 : 0)
-                .animation( showCard ? (.timingCurve(0.2, 0.8, 0.2, 1, duration: 0.8)) : .linear(duration: 1))
+            .animation(.spring(response: 0.3, dampingFraction: 0.8, blendDuration: 0))
             //.animation(.easeInOut(duration: 0.8))
             .gesture(
                 DragGesture().onChanged { value in
