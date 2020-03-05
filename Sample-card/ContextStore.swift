@@ -38,6 +38,7 @@ class CourseStore: ObservableObject {
                 self.courses.append(Course(
                     title: item.fields["title"] as! String,
                     subtitle: item.fields["subtitle"] as! String,
+                    context: item.fields["context"] as! String,
                     image: item.fields.linkedAsset(at: "image")?.url ?? URL(string: "")!,
                     logo: #imageLiteral(resourceName: "Logo1"),
                     color: colors.randomElement()!,

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		182D8AE8240FC4E80050CB62 /* ContextDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D8AE7240FC4E80050CB62 /* ContextDetail.swift */; };
 		182D8AEA240FCBD80050CB62 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D8AE9240FCBD80050CB62 /* PostList.swift */; };
 		182D8AEC240FCBE30050CB62 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D8AEB240FCBE30050CB62 /* Data.swift */; };
 		182D8AEE240FCDB40050CB62 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D8AED240FCDB40050CB62 /* DataStore.swift */; };
@@ -17,6 +16,7 @@
 		1847331E240CACA5007B2E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1847331D240CACA5007B2E5F /* Assets.xcassets */; };
 		18473321240CACA5007B2E5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18473320240CACA5007B2E5F /* Preview Assets.xcassets */; };
 		18473324240CACA5007B2E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18473322240CACA5007B2E5F /* LaunchScreen.storyboard */; };
+		1865A2732410B03300DF1628 /* ContextListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865A2722410B03300DF1628 /* ContextListView.swift */; };
 		1871CE71240E7F020089D1FE /* UpDatelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CE70240E7F020089D1FE /* UpDatelist.swift */; };
 		1871CE73240E7F210089D1FE /* UpDateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CE72240E7F210089D1FE /* UpDateDetail.swift */; };
 		1871CE75240E7FAE0089D1FE /* UpDateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CE74240E7FAE0089D1FE /* UpDateStore.swift */; };
@@ -39,11 +39,9 @@
 		18DDF6F9240FFC0800D63DE6 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 18DDF6F8240FFC0800D63DE6 /* Contentful */; };
 		18DDF6FC240FFC6B00D63DE6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 18DDF6FB240FFC6B00D63DE6 /* SDWebImageSwiftUI */; };
 		18DDF6FE240FFC9500D63DE6 /* ContextStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDF6FD240FFC9500D63DE6 /* ContextStore.swift */; };
-		18EC8B51240FA361004DBE05 /* ContextListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC8B50240FA361004DBE05 /* ContextListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		182D8AE7240FC4E80050CB62 /* ContextDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextDetail.swift; sourceTree = "<group>"; };
 		182D8AE9240FCBD80050CB62 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		182D8AEB240FCBE30050CB62 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		182D8AED240FCDB40050CB62 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
@@ -55,6 +53,7 @@
 		18473320240CACA5007B2E5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18473323240CACA5007B2E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18473325240CACA5007B2E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1865A2722410B03300DF1628 /* ContextListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextListView.swift; sourceTree = "<group>"; };
 		1871CE70240E7F020089D1FE /* UpDatelist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDatelist.swift; sourceTree = "<group>"; };
 		1871CE72240E7F210089D1FE /* UpDateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDateDetail.swift; sourceTree = "<group>"; };
 		1871CE74240E7FAE0089D1FE /* UpDateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDateStore.swift; sourceTree = "<group>"; };
@@ -75,7 +74,6 @@
 		18A0704A240E38C1002EF179 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		18A0704C240E4032002EF179 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		18DDF6FD240FFC9500D63DE6 /* ContextStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextStore.swift; sourceTree = "<group>"; };
-		18EC8B50240FA361004DBE05 /* ContextListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +113,7 @@
 				1847331B240CACA3007B2E5F /* AboutView.swift */,
 				18A0704A240E38C1002EF179 /* Home.swift */,
 				18A0704C240E4032002EF179 /* HomeView.swift */,
-				18EC8B50240FA361004DBE05 /* ContextListView.swift */,
-				182D8AE7240FC4E80050CB62 /* ContextDetail.swift */,
+				1865A2722410B03300DF1628 /* ContextListView.swift */,
 				18DDF6FD240FFC9500D63DE6 /* ContextStore.swift */,
 				18A07048240E3197002EF179 /* MenuView.swift */,
 				1871CE76240E84C20089D1FE /* TabBarView.swift */,
@@ -276,16 +273,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18EC8B51240FA361004DBE05 /* ContextListView.swift in Sources */,
 				182D8AEE240FCDB40050CB62 /* DataStore.swift in Sources */,
 				18DDF6FE240FFC9500D63DE6 /* ContextStore.swift in Sources */,
 				182D8AEC240FCBE30050CB62 /* Data.swift in Sources */,
-				182D8AE8240FC4E80050CB62 /* ContextDetail.swift in Sources */,
 				1871CE71240E7F020089D1FE /* UpDatelist.swift in Sources */,
 				1871CE79240EA2680089D1FE /* Modifiers.swift in Sources */,
 				1871CE75240E7FAE0089D1FE /* UpDateStore.swift in Sources */,
 				18473318240CACA3007B2E5F /* AppDelegate.swift in Sources */,
 				18A07049240E3197002EF179 /* MenuView.swift in Sources */,
+				1865A2732410B03300DF1628 /* ContextListView.swift in Sources */,
 				1871CE73240E7F210089D1FE /* UpDateDetail.swift in Sources */,
 				18A0704B240E38C1002EF179 /* Home.swift in Sources */,
 				18A0704D240E4032002EF179 /* HomeView.swift in Sources */,

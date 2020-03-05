@@ -74,6 +74,7 @@ struct HomeView: View {
                 Spacer()
                 
                 }
+            .frame(width: screen.width)
             }
     }
 }

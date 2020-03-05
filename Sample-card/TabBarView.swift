@@ -15,10 +15,17 @@
                  Image(systemName: "play.circle.fill")
                  Text("Home")
              }
+            
+             CourseList().tabItem {
+                Image(systemName: "rectangle.stack.fill")
+                Text("Categories")
+                       }
+            
              ContentView().tabItem {
-                 Image(systemName: "rectangle.stack.fill")
+                 Image(systemName: "paperplane.fill")
                  Text("About")
              }
+           
          }
          .edgesIgnoringSafeArea(.top)
      }
