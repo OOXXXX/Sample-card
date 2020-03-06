@@ -36,7 +36,7 @@
 		1871E43424113BED0059032C /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E43324113BED0059032C /* BlogView.swift */; };
 		18798D8A240F556A0086F758 /* UbuntuCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18798D88240F556A0086F758 /* UbuntuCondensed-Regular.ttf */; };
 		18870AD82410D921009AAB50 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18870AD72410D921009AAB50 /* Utilities.swift */; };
-		18A07049240E3197002EF179 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A07048240E3197002EF179 /* MenuView.swift */; };
+		18A07049240E3197002EF179 /* HomeButtomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A07048240E3197002EF179 /* HomeButtomView.swift */; };
 		18A0704B240E38C1002EF179 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0704A240E38C1002EF179 /* Home.swift */; };
 		18A0704D240E4032002EF179 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0704C240E4032002EF179 /* HomeView.swift */; };
 		18C689C72410CCA100582172 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C689C62410CCA100582172 /* Detail.swift */; };
@@ -77,7 +77,7 @@
 		1871E43324113BED0059032C /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
 		18798D88240F556A0086F758 /* UbuntuCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		18870AD72410D921009AAB50 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		18A07048240E3197002EF179 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = ../MenuView.swift; sourceTree = "<group>"; };
+		18A07048240E3197002EF179 /* HomeButtomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeButtomView.swift; path = ../HomeButtomView.swift; sourceTree = "<group>"; };
 		18A0704A240E38C1002EF179 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		18A0704C240E4032002EF179 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		18C689C62410CCA100582172 /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
@@ -118,25 +118,23 @@
 			children = (
 				18473317240CACA3007B2E5F /* AppDelegate.swift */,
 				18473319240CACA3007B2E5F /* SceneDelegate.swift */,
-				1847331B240CACA3007B2E5F /* AboutView.swift */,
 				18A0704A240E38C1002EF179 /* Home.swift */,
 				18A0704C240E4032002EF179 /* HomeView.swift */,
+				18A07048240E3197002EF179 /* HomeButtomView.swift */,
 				1865A2722410B03300DF1628 /* ContextListView.swift */,
-				18C689C62410CCA100582172 /* Detail.swift */,
 				18DDF6FD240FFC9500D63DE6 /* ContextStore.swift */,
-				18A07048240E3197002EF179 /* MenuView.swift */,
+				18C689C62410CCA100582172 /* Detail.swift */,
 				1871CE76240E84C20089D1FE /* TabBarView.swift */,
-				1871CE70240E7F020089D1FE /* UpDatelist.swift */,
-				1871CE72240E7F210089D1FE /* UpDateDetail.swift */,
-				1871CE74240E7FAE0089D1FE /* UpDateStore.swift */,
-				1871CE78240EA2680089D1FE /* Modifiers.swift */,
 				182D8AE9240FCBD80050CB62 /* PostList.swift */,
+				1847331B240CACA3007B2E5F /* AboutView.swift */,
 				182D8AEB240FCBE30050CB62 /* Data.swift */,
 				182D8AED240FCDB40050CB62 /* DataStore.swift */,
 				1871E4312411387C0059032C /* WebView.swift */,
 				1871E43324113BED0059032C /* BlogView.swift */,
 				18870AD72410D921009AAB50 /* Utilities.swift */,
+				1871CE78240EA2680089D1FE /* Modifiers.swift */,
 				1847331D240CACA5007B2E5F /* Assets.xcassets */,
+				18E850512411DF98004B499D /* Extra */,
 				18798D87240F556A0086F758 /* Ubuntu_Condensed */,
 				1871CE7A240EA6570089D1FE /* Oswald */,
 				1871CE85240EA6570089D1FE /* Oxygen */,
@@ -193,6 +191,16 @@
 				18798D88240F556A0086F758 /* UbuntuCondensed-Regular.ttf */,
 			);
 			path = Ubuntu_Condensed;
+			sourceTree = "<group>";
+		};
+		18E850512411DF98004B499D /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				1871CE70240E7F020089D1FE /* UpDatelist.swift */,
+				1871CE72240E7F210089D1FE /* UpDateDetail.swift */,
+				1871CE74240E7FAE0089D1FE /* UpDateStore.swift */,
+			);
+			path = Extra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +301,7 @@
 				1871CE75240E7FAE0089D1FE /* UpDateStore.swift in Sources */,
 				18870AD82410D921009AAB50 /* Utilities.swift in Sources */,
 				18473318240CACA3007B2E5F /* AppDelegate.swift in Sources */,
-				18A07049240E3197002EF179 /* MenuView.swift in Sources */,
+				18A07049240E3197002EF179 /* HomeButtomView.swift in Sources */,
 				1865A2732410B03300DF1628 /* ContextListView.swift in Sources */,
 				1871CE73240E7F210089D1FE /* UpDateDetail.swift in Sources */,
 				18A0704B240E38C1002EF179 /* Home.swift in Sources */,
