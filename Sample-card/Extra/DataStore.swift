@@ -9,15 +9,20 @@
 import SwiftUI
 import Combine
 
-class DataStore: ObservableObject {
+class DataStore: ObservableObject
+{
     @Published var posts: [Post] = []
     
-    init() {
+    init()
+    {
         getPosts()
     }
     
-    func getPosts() {
-        Api().getPosts { (posts) in
+    func getPosts()
+    {
+        Api().getPosts
+            {
+                (posts) in
             self.posts = posts
         }
     }
