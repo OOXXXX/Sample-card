@@ -12,6 +12,8 @@ struct Post: Codable, Identifiable {
     let id = UUID()
     var name: String
     var body: String
+    //var image = String
+    
 }
 
 class Api {

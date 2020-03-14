@@ -18,8 +18,11 @@ struct UpdateList: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(store.updates) { update in
-                    NavigationLink(destination: UpdateDetail(update: update)) {
+                ForEach(store.updates)
+                {
+                    update in
+                    NavigationLink(destination: UpdateDetail(update: update))
+                    {
                         HStack {
                             Image(update.image)
                                 .resizable()
@@ -61,6 +64,12 @@ struct UpdateList: View {
         }
     }
 }
+
+
+
+
+
+
 
 struct UpdateList_Previews: PreviewProvider {
     static var previews: some View {

@@ -6,6 +6,7 @@
 	<array>
 		<string>Oxygen-Bold.ttf</string>
 		<string>UbuntuCondensed-Regular.ttf</string>
+		<string>Oxygen-Regular.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

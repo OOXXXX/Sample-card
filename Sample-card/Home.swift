@@ -18,7 +18,7 @@ struct Home: View {
             .edgesIgnoringSafeArea(.all)
             
             HomeView(showProfile: $showProfile)
-            .padding(.top, 40)
+            .padding(.top, 45)
             
              .background(
                     VStack {
@@ -61,8 +61,6 @@ struct Home: View {
                 }
             )
         }
-        .statusBar(hidden: showProfile ? true : false)
-        .animation(.easeIn)
     }
 }
 

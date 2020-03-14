@@ -14,8 +14,10 @@ struct PostList: View {
     var body: some View {
         List(store.posts) { post in
             VStack(alignment: .leading, spacing: 8) {
-                    Text(post.name).font(.system(.title, design: .serif)).bold()
+                Text(post.name).font(.system(.title, design: .serif)).bold()
                 Text(post.body).font(.subheadline).foregroundColor(.secondary)
+                
+                 
             }
         }
     }
